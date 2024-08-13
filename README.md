@@ -1,6 +1,6 @@
 # mysite
 
-For default Start Project With Django 
+For Start Project With Django 
 
 ## Style
 - Tailwindcss
