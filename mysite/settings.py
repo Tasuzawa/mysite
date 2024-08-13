@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.cluster-bec2e4635ng44w7ed22sa22hes.cloudworkstations.dev',
+    'https://*.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev',
 ]
 
 # Application definition
@@ -109,8 +109,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'neondb',
         'USER': 'neondb_owner',
-        'PASSWORD': 'ckOGMbtTz09x',
-        'HOST': 'ep-plain-sound-a1amdx7n.ap-southeast-1.aws.neon.tech',
+        'PASSWORD': 'T1pW6sDabrku',
+        'HOST': 'ep-wild-sky-a1yfau4p.ap-southeast-1.aws.neon.tech',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
@@ -175,7 +175,44 @@ INTERNAL_IPS = [
 ]
 
 ## Unfold Admin Settings
+from django.templatetags.static import static
+from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
+
+
 UNFOLD = {
     "SITE_TITLE": "Mysite Admin",
     "SITE_HEADER": "Mysite Admin",
+    "COLORS": {
+        "primary": {
+            "50": "#f2f7fb",
+            "100": "#e7f0f8",
+            "200": "#d3e2f2",
+            "300": "#b9cfe8",
+            "400": "#9cb6dd",
+            "500": "#839dd1",
+            "600": "#6a7fc1",
+            "700": "#6374ae",
+            "800": "#4a5989",
+            "900": "#414e6e",
+            "950": "#262c40",
+        },
+    },
+     "SIDEBAR": {
+         "show_search": True,
+
+     },
+     
+      "SITE_ICON": {
+        "light": lambda request: static("logo/canine.ico"),  # light mode
+        "dark": lambda request: static("logo/canine.ico"),  # dark mode
+    },
+     "SITE_FAVICONS": [
+        {
+            "rel": "icon",
+            "sizes": "32x32",
+            "type": "image/svg+xml",
+            "href": lambda request: static("logo/canine.ico"),
+        },
+    ],
 }
