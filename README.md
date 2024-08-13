@@ -1,15 +1,16 @@
 # mysite
 
 For Start Project With Django 
-
-## Style
+## Setting
+### Style
 - Tailwindcss
 - Preline UI
 
 ### Databases Postgresql
 https://neon.tech/
 
-## Install 
+## Installation Setting
+### Install 
 ```
 python -m venv .venv
 source .venv/bin/activate
@@ -19,9 +20,12 @@ python manage.py migrate
 python manage.py tailwind install
 ```
 
-## How To Start
-
+### Start Server
+#### For Tailwind Development
 ```
 python manage.py tailwind start
+```
+#### For Django
+```
 python manage.py runserver
 ```
