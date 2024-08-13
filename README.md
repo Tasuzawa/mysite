@@ -1,15 +1,15 @@
 # mysite
 
 For Start Project With Django 
-## Setting
-### Style
+## Styling and UI
 - Tailwindcss
 - Preline UI
 
+## Setting
 ### Databases Postgresql
 https://neon.tech/
 
-## Installation Setting
+## Installation Settings
 ### Install 
 ```
 python -m venv .venv
