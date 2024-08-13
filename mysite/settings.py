@@ -32,9 +32,14 @@ ALLOWED_HOSTS = [
 ]
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.cluster-bec2e4635ng44w7ed22sa22hes.cloudworkstations.dev',
+]
+
 # Application definition
 
 INSTALLED_APPS = [
+    'unfold',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -168,3 +173,9 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+## Unfold Admin Settings
+UNFOLD = {
+    "SITE_TITLE": "Mysite Admin",
+    "SITE_HEADER": "Mysite Admin",
+}
