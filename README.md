@@ -5,11 +5,11 @@ For Start Project With Django
 - Tailwindcss
 - Preline UI
 
-## Setting
+## Settings
 ### Databases Postgresql
 https://neon.tech/
 
-## Installation Settings
+## Installations
 ### Install 
 ```
 python -m venv .venv
