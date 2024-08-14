@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev',
+    'https://*.cluster-3g4scxt2njdd6uovkqyfcabgo6.cloudworkstations.dev',
 ]
 
 # Application definition
@@ -182,7 +182,7 @@ from django.utils.translation import gettext_lazy as _
 
 UNFOLD = {
     "SITE_TITLE": "Mysite Admin",
-    "SITE_HEADER": "Mysite Admin",
+    "SITE_HEADER": "Mysite Databases",
     "COLORS": {
         "primary": {
             "50": "#f2f7fb",
